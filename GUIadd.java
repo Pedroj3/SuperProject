@@ -150,6 +150,10 @@ public class GUIadd extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldUBActionPerformed
 
+    public boolean jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        return (comboBoxStudentTutor.getSelectedIndex()==0);
+    }                                              
+    
     /**
      * @param args the command line arguments
      */
