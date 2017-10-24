@@ -66,6 +66,11 @@ public class GUIadd extends javax.swing.JFrame {
         buttonSave.setText("SAVE");
 
         buttonCancel.setText("Cancel");
+        buttonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCancelActionPerformed(evt);
+            }
+        });
 
         labelMessageName.setForeground(new java.awt.Color(143, 18, 2));
 
@@ -150,7 +155,11 @@ public class GUIadd extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldUBActionPerformed
 
-    public boolean jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+    private void buttonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCancelActionPerformed
+        dispose();
+    }//GEN-LAST:event_buttonCancelActionPerformed
+
+    public boolean isStudent () {                                           
         return (comboBoxStudentTutor.getSelectedIndex()==0);
     }                                              
     
