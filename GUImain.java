@@ -14,7 +14,9 @@ import javax.swing.JLabel;
  * @author badan
  */
 public class GUImain extends javax.swing.JFrame {
-
+    
+    private JButton buttonEdit = new JButton("Edit");
+    
     /**
      * Creates new form GUImain
      */
@@ -126,17 +128,34 @@ public class GUImain extends javax.swing.JFrame {
         (this.panelResults.add(new JLabel("Name"))).setPreferredSize(new Dimension (20, 5));
         //JButton for editing
         //Opens GUIedit
-        this.panelResults.add(new JButton("Edit"));
+        
+        this.panelResults.add(buttonEdit);
         
         validate();
     }//GEN-LAST:event_textFieldSearchActionPerformed
-
+    
+    private void buttonEditActionPerformed(java.awt.event.ActionEvent evt) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new GUIedit().setVisible(true);
+            }
+        });
+    }
+    
     private void buttonAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAddActionPerformed
-        //opens GUIadd
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new GUIadd().setVisible(true);
+            }
+        });
     }//GEN-LAST:event_buttonAddActionPerformed
 
     private void buttonFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonFilterActionPerformed
-        //opens GUIfilter
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new GUIfilter().setVisible(true);
+            }
+        });
     }//GEN-LAST:event_buttonFilterActionPerformed
 
     /**
