@@ -1,0 +1,177 @@
+body{
+    margin: 0px;
+    background-color: #f2f2f2;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+#nav li a.active {
+    background-color: #FF3D3D;
+    color: white;
+}
+
+#nav li a:hover {
+    background-color: #111;
+}
+
+header {
+    padding: 0.001em;
+    color: #000000;
+    background-color: #f2f2f2;
+    clear: left;
+    height: 150px;
+    text-align: center;
+    line-height: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1 {
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: "Poiret One";
+    font-size: 15px;
+    letter-spacing: 5px;
+    color:  #ff1a1a;
+    margin-left: 1em;
+}
+
+h3 {
+    font-family: "Poiret One";
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+h4 {
+    font-family: "Poiret One";
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #ff1a1a;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: right;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 30%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 70%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #333333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+a.list{
+    color: #ffffff;
+    font-family: "Poiret One";
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h5 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+a{
+    color: #FF3D3D;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+a1 {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 30px;
+    font-weight: 100; 
+}
+
+table {
+    font-family: "Montserrat";
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 20px;
+}
+
+th{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+}
+
