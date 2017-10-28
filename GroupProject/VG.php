@@ -1,32 +1,36 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <title>Home</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
         <!--Style Sheet-->
-        <link rel="stylesheet" type="text/css" href="Hstyle.css">
+        <link rel="stylesheet" type="text/css" href="AddStyle.css">
 
-    </head> 
-
+        <meta charset="utf-8">
+        <title>Staff List</title>
+    </head>
     <body>
-        <!--Navigation Bar-->
-        <div id="nav">
-            <ul>
-                <li><a class="active" href="Login.php">Login</a></li>
-            </ul>      
-        </div>
-        <!--Header-->
-        <header>
-            <h1>Tutor Groups</h1>
-        </header>
 
-            <div>
+        <div id="wrapper">
+
+            <!--Navigation Bar-->
+            <div id="nav">
+                <ul>
+                <li><a class="active" href="index.php">Staff Page</a></li>
+                <li><a href="AddS.php">Students</a></li>
+                <li><a href="AddST.php">Staff</a></li>
+                <li><a href="AddG.php">Groups</a></li>
+
+                </ul>      
+            </div>
+
+            <!--Header-->
+            <header>
+                <h1>Groups List</h1>
+            </header>
+
                 <?php
                 $servername = "lamp.scim.brad.ac.uk";
                 $username = "lpcovaje";
@@ -40,13 +44,14 @@
                     {
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }
-                    $stmt = $db->query('SELECT Name, Tutor, Members, Year FROM GP_Groups ORDER BY ID DESC');
+                    $stmt = $db->query('SELECT Name, Tutor, Members, Year FROM GP_Groups ORDER BY Year ASC');
 
                         echo "<table border='1'>
                         <tr>
-                        <th>Group Name</th>
+                        <th>Name</th>
                         <th>Tutor</th>
                         <th>Members</th>
+                        <th>Year</th>
                         </tr>";
 
                             while($row = mysqli_fetch_array($stmt))
@@ -61,7 +66,9 @@
                             echo "</table>";
 
                         mysqli_close($db);
-                    ?>                           
-            </div>
+                    ?>                          
+
+        </div>
+
     </body>
 </html>

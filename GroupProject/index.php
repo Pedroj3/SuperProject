@@ -18,11 +18,10 @@
             <!--Navigation Bar-->
             <div id="nav">
                 <ul>
-                <li><a href="Home.php">Logout</a></li>
                 <li><a class="active" href="index.php">Staff Page</a></li>
-                <li><a href="AddS.php">Add Student</a></li>
-                <li><a href="AddST.php">Add Staff</a></li>
-                <li><a href="AddG.php">Add Group</a></li>
+                <li><a href="AddS.php">Students</a></li>
+                <li><a href="AddST.php">Staff</a></li>
+                <li><a href="AddG.php">Groups</a></li>
 
                 </ul>      
             </div>
@@ -45,13 +44,14 @@
                     {
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }
-                    $stmt = $db->query('SELECT Name, Tutor, Members FROM GP_Groups ORDER BY ID ASC');
+                    $stmt = $db->query('SELECT Name, Tutor, Members, Year FROM GP_Groups ORDER BY ID DESC');
 
                         echo "<table border='1'>
                         <tr>
                         <th>Group Name</th>
                         <th>Tutor</th>
                         <th>Members</th>
+                        <th>Year</th>
                         </tr>";
 
                             while($row = mysqli_fetch_array($stmt))
@@ -60,6 +60,7 @@
                             echo "<td>" . $row['Name'] . "</td>";
                             echo "<td>" . $row['Tutor'] . "</td>";
                             echo "<td>" . $row['Members'] . "</td>";
+                            echo "<td>" . $row['Year'] . "</td>";
                             echo "</tr>";
                             }
                             echo "</table>";
