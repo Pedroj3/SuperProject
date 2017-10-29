@@ -18,10 +18,10 @@
             <!--Navigation Bar-->
             <div id="nav">
                 <ul>
-                <li><a class="active" href="index.php">Staff Page</a></li>
+                <li><a href="index.php">Staff Page</a></li>
                 <li><a href="AddS.php">Students</a></li>
                 <li><a href="AddST.php">Staff</a></li>
-                <li><a href="AddG.php">Groups</a></li>
+                <li><a class="active" href="AddG.php">Groups</a></li>
 
                 </ul>      
             </div>
