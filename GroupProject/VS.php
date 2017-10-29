@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="AddStyle.css">
 
         <meta charset="utf-8">
-        <title>View all students</title>
+        <title>Students List</title>
     </head>
     <body>
 
@@ -28,8 +28,25 @@
 
             <!--Header-->
             <header>
-                <h1>Student List</h1>
+                <h1>Students List</h1>
             </header>
+            
+            <form method="post" >
+                <label>
+                <select name="Filter" id="Filter">
+                  <option value="All" selected="selected">All</option>
+                  <option value="1st Year">1st Year</option>
+                  <option value="2nd Year">2nd Year</option>
+                  <option value="3rd Year">3rd Year</option>
+                  <option value="PhD">PhD</option>
+                </select>
+                </label>
+                <label>
+                <input type="submit" name="Submit" value="Submit" />
+                </label>
+            </form>
+            
+            
 
                 <?php
                 $servername = "lamp.scim.brad.ac.uk";
@@ -44,17 +61,44 @@
                     {
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }
-                    $stmt = $db->query('SELECT UB, Name, Year, Group_name FROM GP_Students ORDER BY Year ASC');
+                    
+                    $query = "SELECT UB, Name, Year, Group_name FROM GP_Students ORDER BY Year ASC";
+                    
+                    if (isset($_POST['Filter'])){
+                        
+                        if ($_POST['Filter'] == 'All')
+                        {
+                        $query = "SELECT UB, Name, Year, Group_name FROM GP_Students ORDER BY Year ASC";
+                        }
+                        elseif ($_POST['Filter'] == '1st Year')
+                        {
+                        $query = "SELECT UB, Name, Year, Group_name FROM GP_Students WHERE Year='1' ORDER BY Name ASC";
+                        }
+                        elseif ($_POST['Filter'] == '2nd Year')
+                        {
+                        $query = "SELECT UB, Name, Year, Group_name FROM GP_Students WHERE Year='2' ORDER BY Name ASC";
+                        }
+                        elseif ($_POST['Filter'] == '3rd Year')
+                        {
+                        $query = "SELECT UB, Name, Year, Group_name FROM GP_Students WHERE Year='3' ORDER BY Name ASC";
+                        }
+                        elseif ($_POST['Filter'] == 'PhD')
+                        {
+                        $query = "SELECT UB, Name, Year, Group_name FROM GP_Students WHERE Year='PhD' ORDER BY Name ASC";
+                        }
+                    }
 
+                        $sql = mysqli_query($db, $query);
+                    
                         echo "<table border='1'>
                         <tr>
-                        <th>UB Number</th>
+                        <th>UB</th>
                         <th>Name</th>
                         <th>Year</th>
                         <th>Group_name</th>
                         </tr>";
 
-                            while($row = mysqli_fetch_array($stmt))
+                            while($row = mysqli_fetch_array($sql))
                             {
                             echo "<tr>";
                             echo "<td>" . $row['UB'] . "</td>";
