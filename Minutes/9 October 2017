@@ -1,0 +1,49 @@
+Monday, 9 October 3:00 PM
+
+Attendees
+	William Brown
+	Luis Jesus 
+	Bianca Andreea Dan 
+	Noelle Abe 
+	Mahad Ahmed
+	Hamza Ikhtiar
+
+Minutes
+- We decided to use Java and MySQL.
+- We set up a GitHub repository.
+- We assigned roles
+	- William and Luis will create the database.
+	- Noelle will create methods to edit student/staff information.
+	- Mahad will create methods to add students/staff to the database.
+	- Hamza will create methods to display students/staff.
+	- Bianca will create the user interface.
+	- Everyone will help to connect the database to the application.
+	- Noelle will edit the Requirements Specification document when it is complete.
+- We decided to have weekly meetings on Mondays at 3:00 in the library.
+
+We informally compiled the following requirements:
+Data:
+	- Student ID: integers
+	- Student names: strings
+	- Staff ID: integers
+	- Staff names: strings
+	- Group names: strings
+
+Functions:
+	- Add students/staff (Mahad)
+	- Edit students/staff (Noelle)
+		- Allocate students to different staff members
+		- Edit name/ID
+		- Remove people
+	- Display students/staff (Hamza)
+		- All students
+		- All staff
+		- By group name
+	
+Schedule:
+	- Create database
+	- Create Java application/UI
+	- Connect database to application
+	- Testing
+	- Populate database
+	- Test functions

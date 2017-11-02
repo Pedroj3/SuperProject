@@ -1,0 +1,23 @@
+Friday, 6 October 11:00 AM
+
+Attendees
+	William Brown
+	Luis Jesus 
+	Bianca Andreea Dan 
+	Noelle Abe 
+	Mahad Ahmed
+	Hamza Ikhtiar 
+
+Minutes
+- We discussed leadership of the group.
+	Team Leader: William
+	Secretary: Noelle
+- We determined that team leaders will be rotated every two weeks to give everyone leadership experience.
+- We compiled a list of questions regarding project requirements.
+- We verified that we could all communicate using the Slack application.
+- Bianca demonstrated GUI implementation with JFrame for those unfamiliar with NetBeans.
+- Noelle and Bianca asked Professor Marian Gheorghe a list of questions created earlier.  T
+	- Essentially, we need to come up with a simple yet efficient implementation that makes sense.
+	- The data will be manually entered by a person on one line.  Extra features like entering information from a file could be added later.
+	- Validation of data is expected.  We should not allow text when we expect a UB number, and we should not allow a student’s name to have numbers in it.
+	- Professor Gheorghe also mentioned that suggesting new features to a client during the first meeting is not wise because client's hopes might be set unreasonably high.

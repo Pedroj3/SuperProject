@@ -1,0 +1,32 @@
+Monday, 16 October 3:00 PM
+
+Attendees
+	Luis Jesus 
+	Bianca Andreea Dan 
+	Noelle Abe 
+	Hamza Ikhtiar
+Absent
+	William Brown
+	Mahad Ahmed
+
+Minutes
+- Mahad was absent because he was returning from Leeds.
+- William was absent.
+- We discussed which language to use and once again confirmed using Java because it was a language everyone knew.
+
+	Coding conventions
+		- We were reminded that the agile approach means that the code should be written in such a way that it can be read as a document.
+		- We discussed comments and decided to only use // to denote comments, instead of /* */.
+		- We discussed indentation and decided to use a single tab when indentation is necessary.
+		- We discussed naming conventions and decided to use capital letters for new words in variable names, instead of underscores.
+- We were reminded that the requirements specification document is online and should be completed by everyone.
+- We discussed the possibility of creating a UML diagram and decided that it is unnecessary at this time.
+- We discussed GitHub and decided to eventually create a new one based on lab instructions.
+- New meeting time: Thursday at 3:00 PM
+
+Task Allocation
+	Luis and William - Databases
+	Bianca - Interface design and functions
+	Hamza - Print functions
+	Noelle - Edit functions
+	Mahad - Add functions

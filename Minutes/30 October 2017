@@ -1,0 +1,47 @@
+Monday, 30 October 3:00 PM
+
+Attendees
+	Luis Jesus 
+	Bianca Andreea Dan 
+	Noelle Abe 
+	Hamza Ikhtiar
+	Mahad Ahmed
+	William Brown
+
+Minutes
+- Discussed
+	- Final website design
+	- Position of textboxes, buttons, etc.
+	- Functionality of buttons
+	- Undergraduate vs. postgraduate students
+- Decided
+	- The exact layout of each page.
+	- The existence of a dropdown menu for each page with Add, Edit, Delete functionality.
+	- Basic layout of Add and Edit pages
+		- Name: varchar(30)
+		- UB No: int(8)
+		- Stage: varchar(3)
+		- Submit button in the middle
+	- Basic layout of Delete page
+- To do:
+	- Add a screen to allocate students into a group.
+	- Change the Members column to 8 separate columns with a data type of int(8), e.g. Member1, Member2, Member3…Member8
+	- Keep undergraduates/postgraduates in separate groups
+- Luis worked on the structure of the website.
+	- To do: add more functions to the website
+	- To do: add data validation (can use Test Cases document for reference)
+	- To do: add delete page to dropdown box
+- William worked on the structure of the website.
+	- To do: create coding conventions document
+	- To do: finish CSS
+- Noelle worked on compiling test cases.
+	- To do: upload notes
+	- To do: work on requirements specification document based on layout
+	- To do: work on test cases
+- Bianca worked on compiling test cases.
+	- To do: work on test cases
+	- To do: redraw sketches on the computer and upload to GitHub
+- Mahad worked on the requirements specification document.
+	- To do: continue to work on requirements specification document based on layout.
+- Hamza worked on the requirements specification document.
+	- To do: continue to work on requirements specification document based on layout.

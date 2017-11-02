@@ -1,0 +1,25 @@
+Monday, 23 October 3:00 PM
+
+Attendees
+	Luis Jesus 
+	Bianca Andreea Dan 
+	Noelle Abe 
+	Hamza Ikhtiar
+	Mahad Ahmed
+	William Brown
+
+Minutes
+- The database must be changed so that groups’ UB numbers are stored individually
+- The system must validate UB numbers so that they are exactly 8 characters long
+- The system must validate group members to ensure that groups do not have fewer than 4 members or more than 8 members.
+- Luis Jesus adjusted the database to store UB numbers in groups individually.
+- Bianca Andreea Dan almost finished the interface and researched how to differentiate between student/staff.
+	- To do: implement a dropdown menu to differentiate between students and staff.
+- Noelle Abe wrote methods for editing and deleting students/staff, assuming that all people are students.  
+	- To do: adjust the methods to account for staff members as well.
+- Hamza Ikhtiar worked on the connection between the Java application and the database.
+	- To do: complete the connection.
+- Mahad Ahmed worked on the method for adding students/staff.
+	- To do: test the method to ensure that students/staff are added to the database.
+- William Brown worked on the connection between the application and the database.
+	- To do: complete the connection.
